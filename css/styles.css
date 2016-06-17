@@ -1,5 +1,5 @@
 ﻿.hero {
-    background-image:url(../img/tumblr_image.jpg);
+    background:url(../img/tumblr_image.jpg) repeat fixed 100%;
     background-position:center;
     background-size:cover;
     
@@ -9,3 +9,13 @@
     margin-bottom: 0px;
     border-radius: 0px;
 }
+
+/*-- Start Parallax --*/
+#wall1{
+    background: url(../img/tumblr_image.jpg) repeat fixed 100%;
+    background-position:center;
+    background-size:cover;
+    height: 500px;
+}
+
+/*-- End Parallax --*/
