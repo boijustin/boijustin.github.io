@@ -1,0 +1,11 @@
+﻿.hero {
+    background-image:url(../img/tumblr_image.jpg);
+    background-position:center;
+    background-size:cover;
+    
+}
+
+#editNavbar {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
