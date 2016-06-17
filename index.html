@@ -5,6 +5,9 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <!--JQuery (Needed for drop down menu)-->
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js"></script>
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <!-- Optional theme -->
@@ -15,6 +18,58 @@
 	<body>
 		<!--<a href="./link.html" >Click here!</a>-->
 
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+
+                <!--Logo-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainMenuBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">thechewmeister.</a>
+                </div>
+
+                <!--Menu items-->
+                <div class="collapse navbar-collapse" id="mainMenuBar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                       
+                        <!--Drop down menu LHS-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Me <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Who's Justin?</a></li>
+                                <li><a href="#">Where's Justin?</a></li>
+                                <li><a href="#">Resume</a></li>
+                            </ul>
+                        </li>
+
+                        <!--Drop down menu LHS-->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Photo Journal <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Summer 2016</a></li>
+                                <li><a href="#">Fall 2016</a></li>
+                                <li><a href="#">Winter 2017</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">Contact Me</a></li>
+
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Archive</a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </nav>
+
         <div class="container text-center">
             <img src="img/Justin_PersonalLogo_Drafts-02.png" class="img-responsive img-circle center-block" width="300" height="300" />
             <h1>thechewmeister.</h1>
@@ -23,9 +78,9 @@
 
         <div class="container">
             <br /> 
-            <img src="img/mom_flowers_square.jpg" class="img-responsive img-circle center-block" width="200" height="200"/>
+            <img src="img/flowers_square.jpg" class="img-responsive img-circle center-block" width="200" height="200"/>
         </div>
-        <!--
+<!--        
         <div class="container">
             <br />
             <h2>Things to do</h2>
