@@ -1,6 +1,8 @@
 ﻿.hero {
-    background:url(../img/tumblr_image.jpg) repeat fixed 100%;
-    background-position:center;
+    background:url(../img/tumblr_image.jpg) no-repeat fixed 100%;
+    padding: 75px 0;
+
+    background-position:center center;
     background-size:cover;
     
 }
@@ -17,15 +19,15 @@
 
 /*-- Start Parallax --*/
 #wall1{
-    background: url(../img/tumblr_image.jpg) repeat fixed 100%;
-    background-position:center;
+    background: url(../img/tumblr_image.jpg) no-repeat fixed 100%;
+    background-position:center center;
     background-size:cover;
     height: 400px;
 }
 
 #wall2{
-    background: url(../img/tumblr_image2.jpg) repeat fixed 100%;
-    background-position:center;
+    background: url(../img/tumblr_image2.jpg) no-repeat fixed 100%;
+    background-position:center center;
     background-size:cover;
     height: 400px;
 }
