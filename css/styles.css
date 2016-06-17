@@ -23,6 +23,11 @@
     border-radius: 0px;
 }
 
+.piece {
+    height: 500px;
+}
+
+
 /*-- Start Parallax --*/
 #wall1{
     background: url(../img/tumblr_image.jpg) repeat fixed 100%;
@@ -30,4 +35,12 @@
     background-size:cover;
     height: 500px;
 }
+
+#wall2{
+    background: url(../img/tumblr_image2.jpg) repeat fixed 100%;
+    background-position:center;
+    background-size:cover;
+    height: 500px;
+}
+
 /*-- End Parallax --*/
