@@ -24,4 +24,4 @@ if (!isMobile.any()) {
     document.getElementById("wall1").style.backgroundAttachment = "fixed";
     document.getElementById("wall2").style.backgroundAttachment = "fixed";
 
-}
+};
