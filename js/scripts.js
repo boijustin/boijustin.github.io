@@ -1,14 +1,26 @@
-﻿function isMobile() {
-    return (/Android|iPhone|iPad|iPod|Blackberry/i).text(navigator.userAgent || navigator.vendor || window.opera);
-}
+﻿var isMobile = {
+    Android: function () {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function () {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
 
-if (!isMobile()) {
-    jQuery(document).ready(function ($) {
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop(), slowScroll = scroll / 3;
-            var headerheight = $('section').height();
-            $('section').css({ transform: "translateY(" + slowScroll + "px)" });
-            $('section .container').css({ opacity: Math.min(1, 1.2 - scroll / headerheight) });
-        });
-    });
+if (!isMobile.any()) {
+    document.getElementById("wall1").style.backgroundAttachment = "fixed";
+    document.getElementById("wall2").style.backgroundAttachment = "fixed";
+
 }
