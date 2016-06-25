@@ -20,6 +20,7 @@
 };
 
 if (!isMobile.any()) {
+    document.getElementById("hero").style.backgroundAttachment = "fixed";
     document.getElementById("wall1").style.backgroundAttachment = "fixed";
     document.getElementById("wall2").style.backgroundAttachment = "fixed";
 
