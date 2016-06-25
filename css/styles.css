@@ -1,7 +1,6 @@
 ﻿#hero {
     background:url(../img/tumblr_image.jpg) no-repeat;
-    padding: 75px 0;
-    background-attachment: scroll;
+   
     background-position:center center;
     background-size:cover;
     
