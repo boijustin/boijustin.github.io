@@ -5,7 +5,11 @@
     background-size:cover;
     
 }
-
+#MapDiv {
+    height: 500px;
+    width: 500px;
+    background-position: center center;
+}
 #editNavbar {
     margin-bottom: 0px;
     border-radius: 0px;
